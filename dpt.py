@@ -189,12 +189,12 @@ if __name__ == "__main__":
 		extract(EXTRACT_TYPE.URL, args.filename)
 
 	if args.domains or args.all:
-		print 'Extracting domains..'
+		
 		extract(EXTRACT_TYPE.DOMAIN, args.filename)
 
 	if args.mobile or args.all:
-		print 'Extracting mobile numbers..'
+		
 		extract(EXTRACT_TYPE.MOBILE, args.filename)
 
 	if args.verbosity:
-		print 'Verbosity level: %s' % args.verbosity
+		
