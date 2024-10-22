@@ -38,20 +38,17 @@ def extract(type, in_filename):
 
 	if (type == EXTRACT_TYPE.EMAIL):
 		extracted_data_list = extract_emails(data)
-		print'%d emails extracted to .csv' % len(extracted_data_list)
-
+		
 	if (type == EXTRACT_TYPE.URL):
 		extracted_data_list = extract_urls(data)
-		print '%d URLs extracted to .csv' % len(extracted_data_list)
-
+		
 	if (type == EXTRACT_TYPE.DOMAIN):
 		extracted_data_list = extract_domains(data)
-		print '%d domains extracted to .csv' % len(extracted_data_list)
+		
 
 	if (type == EXTRACT_TYPE.MOBILE):
 		extracted_data_list = extract_sg_mobile(data)
-		print '%d mobile numbers extracted to .csv' % len(extracted_data_list)
-
+		
 	# Write to the file
 	# eg. filename - email.csv
 	out_filename = in_filename.split('.')[0] + ' - ' + type + '.csv'
