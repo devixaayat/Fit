@@ -38,7 +38,7 @@ def extract(type, in_filename):
 
 	if (type == EXTRACT_TYPE.EMAIL):
 		extracted_data_list = extract_emails(data)
-		print '%d emails extracted to .csv' % len(extracted_data_list)
+		print'%d emails extracted to .csv' % len(extracted_data_list)
 
 	if (type == EXTRACT_TYPE.URL):
 		extracted_data_list = extract_urls(data)
