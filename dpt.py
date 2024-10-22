@@ -196,5 +196,4 @@ if __name__ == "__main__":
 		
 		extract(EXTRACT_TYPE.MOBILE, args.filename)
 
-	if args.verbosity:
 		
