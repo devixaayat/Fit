@@ -181,11 +181,11 @@ if __name__ == "__main__":
 	# print vars(args)
 
 	if args.emails or args.all:
-		print (Extracting emails..)
+		
 		extract(EXTRACT_TYPE.EMAIL, args.filename)
 
 	if args.urls or args.all:
-		print (Extracting URLs..)
+		
 		extract(EXTRACT_TYPE.URL, args.filename)
 
 	if args.domains or args.all:
